@@ -10,9 +10,10 @@ type ButtonType = {
     isRounded?: boolean,
     width?: number,
     height?: number,
+    backgroundColor?: string
 };
 
-export const Button = ({ text, type, onClick, disabled, width, height, isRounded }: ButtonType) => {
+export const Button = ({ text, type, onClick, disabled, width, height, isRounded, backgroundColor }: ButtonType) => {
     return (
         <button
             className={`button-${type} ${isRounded ? 'rounded' : ''} ${disabled ? 'disabled' : ''}`}
@@ -20,6 +21,7 @@ export const Button = ({ text, type, onClick, disabled, width, height, isRounded
             style={{
                 width: width,
                 height: height,
+                backgroundColor: backgroundColor,
             }}
         >
             {text}

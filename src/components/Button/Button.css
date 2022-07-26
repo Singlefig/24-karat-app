@@ -25,6 +25,8 @@ button {
 
 .button-filled {
     background-color: #CD5341;
+    border: none;
+    color: white;
 }
 
 .button-bordered {
@@ -35,6 +37,6 @@ button {
 }
 
 .button-bordered:hover {
-    background-color: #CD5341;
+    background-color: #CD5341 !important;
     color: white;
 }
