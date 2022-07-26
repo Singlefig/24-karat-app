@@ -1,0 +1,99 @@
+.feedback-container {
+    display: flex;
+    background-color: #EEEEEE;
+    width: 100%;
+    justify-content: center;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    width: 1572px;
+    align-items: center;
+    padding: 120px 174px;
+}
+
+.feedback-title {
+    font-family: 'Modern No. 20';
+    font-size: 64px;
+    width: 668px;
+    text-align: center;
+}
+
+.feedback-container .carousel-container {
+    position: static;
+    max-width: 1572px;
+    min-height: 501px;
+    margin-bottom: 44px;
+}
+
+.feedback-container .carousel-container .slick-prev {
+    background-color: #EEEEEE;
+    left: -96px;
+}
+
+.feedback-container .carousel-container .slick-next {
+    right: -80px;
+    background-color: #EEEEEE;
+}
+
+.feedback-carousel-item {
+    display: flex !important;
+    flex-direction: column;
+    padding: 40px 20px;
+    background-color: #FBFBFB;
+    max-width: 330px;
+    min-height: 420px;
+    position: relative;
+}
+
+.reversed {
+    flex-direction: column-reverse;
+}
+
+.feedback-carousel-item .feedback-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-carousel-item .feedback-image {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+.feedback-carousel-item .reversed-image {
+    top: 40px;
+}
+
+.feedback-carousel-item p {
+    margin: 0;
+}
+
+.feedback-carousel-item .author-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.feedback-carousel-item .author-info .author-name {
+    font-family: 'Modern No. 20';
+    font-size: 24px;
+}
+
+.feedback-carousel-item .author-info .stars {
+    display: flex;
+}
+
+.feedback-carousel-item .feedback-item,
+.feedback-carousel-item .feedback-comment {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    width: 290px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.feedback-carousel-item .feedback-comment {
+    font-size: 18px;
+}

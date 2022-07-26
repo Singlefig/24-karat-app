@@ -3,6 +3,7 @@ import { HelloContent } from "./Sections/HelloContent";
 import { TopSelling } from "./Sections/TopSelling";
 import { CreateACustomRing } from "./Sections/CreateACustomRing";
 import { MoreCollections } from "./Sections/MoreCollections";
+import { Feedback } from "./Sections/Feedback";
 
 import './MainPage.css';
 
@@ -14,6 +15,7 @@ export const MainPage = ({ isMainShadowed } : { isMainShadowed: boolean }) => {
             <TopSelling />
             <CreateACustomRing />
             <MoreCollections />
+            <Feedback />
         </main>
     );
 };
