@@ -1,0 +1,39 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 44px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+}
+
+.tab {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.tab p {
+    margin: 0;
+}
+
+.tab.active {
+    color: #CD5341;
+}
+
+.tab.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 1px;
+    bottom: -6px;
+    left: 0;
+    background-color: #CD5341;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.tab:hover {
+    color: #CD5341;
+}

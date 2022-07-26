@@ -1,0 +1,45 @@
+.slick-prev,
+.slick-next {
+    width: 64px;
+    height: 64px;
+    background-color: #FBFBFB;
+    border: 1px solid #333333;
+    border-radius: 50%;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+    border: 1px solid #D16757;
+}
+
+.slick-prev {
+    left: -25px;
+    z-index: 100;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    content: '';
+    display: block;
+    background: url("../../assets/icons/arrow.svg") no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 8px;
+    margin: auto;
+}
+
+.slick-next::before,
+.slick-next:hover::before {
+    transform: rotate(180deg);
+}
+
+.slick-prev:hover::before,
+.slick-next:hover::before {
+    content: '';
+    display: block;
+    background: url("../../assets/icons/arrow-prev-hover.svg") no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 8px;
+    margin: auto;
+}

@@ -33,7 +33,7 @@
     text-transform: uppercase;
 }
 
-.bottom-content a:last-of-type {
+.bottom-content .colored-link {
     color: #CD5341;
 }
 
@@ -42,6 +42,10 @@
     align-items: center;
     column-gap: 27px;
     margin-left: 64px;
+}
+
+.icons img {
+    cursor: pointer;
 }
 
 .bottom-content a {

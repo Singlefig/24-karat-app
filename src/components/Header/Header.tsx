@@ -7,7 +7,7 @@ import cartIcon from '../../assets/icons/cart.svg';
 import favouriteIcon from '../../assets/icons/favourite.svg';
 import karatIcon from '../../assets/icons/24karat.svg';
 
-export const Header = () => {
+export const Header = ({ setIsMainShadowed } : { setIsMainShadowed: any }) => {
     return (
         <header className="header-container">
             <div className="top-content">
@@ -18,13 +18,13 @@ export const Header = () => {
                 <HeaderLink text="Authenticity Card Request" link="#authenticity-card-request" />
             </div>
             <div className="bottom-content">
-                <HeaderLink text="Men's" link="#mens" />
+                <HeaderLink setIsMainShadowed={setIsMainShadowed} withCascade text="Men's" link="#mens" />
                 <HeaderLink text="Wedding" link="#wedding" />
                 <HeaderLink text="Women's" link="#womens" />
                 <HeaderLink text="Gifts" link="#gifts" />
                 <img className="logo" alt="24 karat logo" src={karatIcon} width={157} height={26} />
                 <HeaderLink text="Custom a ring" link="#custom-a-ring" />
-                <HeaderLink text="New" link="#new" />
+                <HeaderLink className="colored-link" text="New" link="#new" />
                 <div className="icons">
                     <img src={searchIcon} alt="search" width={32} height={32} />
                     <img src={favouriteIcon} alt="favourite" width={32} height={32} />

@@ -4,25 +4,22 @@ import './Button.css';
 
 type ButtonType = {
     text: string,
-    border: string,
-    textColor: string,
-    backgroundColor: string,
     onClick: any,
+    type: 'filled' | 'bordered',
     disabled?: boolean,
+    isRounded?: boolean,
     width?: number,
     height?: number,
 };
 
-export const Button = ({ text, border, textColor, backgroundColor, onClick, disabled, width, height }: ButtonType) => {
+export const Button = ({ text, type, onClick, disabled, width, height, isRounded }: ButtonType) => {
     return (
         <button
+            className={`button-${type} ${isRounded ? 'rounded' : ''} ${disabled ? 'disabled' : ''}`}
             onClick={disabled ? null : onClick}
             style={{
-                border: border,
-                color: textColor,
-                backgroundColor: backgroundColor,
                 width: width,
-                height: height
+                height: height,
             }}
         >
             {text}
