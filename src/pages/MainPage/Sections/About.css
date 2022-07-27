@@ -1,0 +1,51 @@
+.about-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 120px 149px 129px;
+    width: 1150px;
+    text-align: left;
+}
+
+.about-section-container .about-title {
+    font-family: 'Modern No. 20';
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.about-section-container .about-images {
+    display: flex;
+    column-gap: 16px;
+    margin-bottom: 32px;
+}
+
+.about-section-container .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 32px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 160%;
+}
+
+.about-section-container .about-text p {
+    margin: 0;
+}
+
+.about-section-container .about-text .about-list {
+    padding: 0 20px;
+}
+
+.about-section-container .about-text .about-list .about-list-item {
+    margin-bottom: 24px;
+}
+
+.about-section-container .about-text .about-list .about-list-item::marker {
+    color: #D16757;
+    width: 5px;
+    height: 5px;
+}

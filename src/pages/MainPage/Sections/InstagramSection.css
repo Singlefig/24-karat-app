@@ -1,0 +1,49 @@
+.instagram-section-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    margin: 0 149px 90px;
+    width: 1620px;
+}
+
+.instagram-section-container .title {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-family: 'Modern No. 20';
+    font-size: 64px;
+    margin-left: 120px;
+}
+
+.instagram-section-container .title p {
+    margin: 0;
+}
+
+.instagram-section-container .title .follow-text {
+    font-family: 'Montserrat';
+    font-size: 36px;
+    color: #CD5341;
+}
+
+.instagram-section-container .carousel-container {
+    max-width: 1560px;
+    position: static;
+}
+
+.instagram-section-container .carousel-container .slider-item {
+    margin: 0 11px;
+}
+
+.instagram-section-container .carousel-container .slick-prev,
+.instagram-section-container .carousel-container .slick-next {
+    background: none;
+}
+
+.instagram-section-container .carousel-container .slick-prev {
+    left: -20px;
+}
+
+.instagram-section-container .carousel-container .slick-prev:hover,
+.instagram-section-container .carousel-container .slick-next:hover {
+    background: white;
+}

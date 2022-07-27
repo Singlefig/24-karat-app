@@ -67,7 +67,7 @@ export const Feedback = () => {
                 stars.push(epmtyStar);
             }
         }
-        return stars.map((star) => <img src={star} width={24} height={24} alt="star" />);
+        return stars.map((star, index) => <img key={star + index} src={star} width={24} height={24} alt="star" />);
     };
 
     return (
@@ -86,7 +86,7 @@ export const Feedback = () => {
                     >
                         {feedbackItems.map((item, index) => {
                             return (
-                                <div key={item.author} className={`feedback-carousel-item ${index % 2 == 1 ? 'reversed' : ''}`}>
+                                <div key={item.author} className={`feedback-carousel-item ${index % 2 === 1 ? 'reversed' : ''}`}>
                                     <div className="feedback-info">
                                         <div className="author-info">
                                             <span className="author-name">{item.author}</span>
@@ -97,7 +97,7 @@ export const Feedback = () => {
                                         <p className="feedback-item">{item.item}</p>
                                         <p className="feedback-comment">{item.comment}</p>
                                     </div>
-                                    <div className={`feedback-image ${index % 2 == 1 ? 'reversed-image' : ''}`}>
+                                    <div className={`feedback-image ${index % 2 === 1 ? 'reversed-image' : ''}`}>
                                         <img src={item.img} width={330} height={239} alt="feedback" />
                                     </div>
                                 </div>
