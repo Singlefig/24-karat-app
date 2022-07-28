@@ -37,6 +37,12 @@
     background-color: #EEEEEE;
 }
 
+.feedback-container .carousel-container .slick-slide > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .feedback-carousel-item {
     display: flex !important;
     flex-direction: column;
@@ -97,4 +103,61 @@
 .feedback-carousel-item .feedback-comment {
     font-size: 18px;
     margin-bottom: 36px;
+}
+
+@media only screen and (max-width: 1920px) {
+    .feedback {
+        padding: 120px 110px;
+        width: 1300px;
+    }
+
+    .feedback .carousel-container {
+        max-width: 1200px;
+    }
+
+    .feedback-container .carousel-container .feedback-carousel-item {
+        max-width: 250px;
+    }
+
+    .feedback-container .carousel-container .feedback-carousel-item .feedback-item,
+    .feedback-container .carousel-container .feedback-carousel-item .feedback-comment {
+        width: 100%;
+    }
+
+    .feedback-container .carousel-container .feedback-carousel-item .feedback-image img {
+        width: calc(100% - 40px);
+        height: 200px;
+    }
+
+    .feedback-container .carousel-container .slick-prev {
+        left: -77px;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .feedback {
+        padding: 120px 64px;
+    }
+
+    .feedback-container .carousel-container .slick-prev {
+        left: -55px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .feedback-container .carousel-container .slick-next {
+        right: -55px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .feedback {
+        padding: 120px 40px;
+    }
+
+    .feedback .carousel-container {
+        max-width: 800px;
+    }
 }

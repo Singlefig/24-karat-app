@@ -39,7 +39,7 @@ const sliderItems = [
     }
 ];
 
-export const TopSelling = () => {
+export const TopSelling = ({ screenWidth } : { screenWidth: any }) => {
     const [tabs, setTabs] = useState(
         [
             {
@@ -70,7 +70,7 @@ export const TopSelling = () => {
                         dots: false,
                         infinite: true,
                         speed: 500,
-                        slidesToShow: 4,
+                        slidesToShow: screenWidth <= 1205 ? 2 : 4,
                         slidesToScroll: 1,
                     }}
                 >

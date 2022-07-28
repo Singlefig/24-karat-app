@@ -13,6 +13,7 @@
     font-family: 'Modern No. 20';
     font-size: 64px;
     margin-left: 120px;
+    width: 100%;
 }
 
 .instagram-section-container .title p {
@@ -46,4 +47,49 @@
 .instagram-section-container .carousel-container .slick-prev:hover,
 .instagram-section-container .carousel-container .slick-next:hover {
     background: white;
+}
+
+@media only screen and (max-width: 1920px) {
+    .instagram-section-container {
+        margin: 0;
+        margin-bottom: 90px;
+        width: 1200px;
+    }
+
+    .instagram-section-container .carousel-container {
+        max-width: 1250px;
+    }
+
+    .instagram-section-container .carousel-container .slider-item img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .instagram-section-container .carousel-container .slick-prev {
+        left: -67px;
+    }
+
+    .instagram-section-container .carousel-container .slick-next {
+        right: -40px;
+    }
+
+    .instagram-section-container {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .instagram-section-container {
+        width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .instagram-section-container {
+        width: 1000px;
+    }
+
+    .instagram-section-container .carousel-container {
+        max-width: 800px;
+    }
 }

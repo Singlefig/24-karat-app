@@ -64,3 +64,47 @@
     font-weight: 300;
     line-height: 160%;
 }
+
+@media only screen and (max-width: 1600px) {
+    .create-custom-ring-container {
+        padding: 120px 225px 286px 350px;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 165px;
+        bottom: 210px;
+    }
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .create-custom-ring-container {
+        padding: 120px 200px 230px;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 160px;
+        bottom: 305px;
+    }
+
+    .create-custom-ring-container .ring-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1205px) {
+    .create-custom-ring-container {
+        padding: 120px 100px 50px;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 60px;
+        bottom: 25px;
+    }
+
+    .create-custom-ring-container .ring-container img {
+        width: 200px;
+        height: 200px;
+    }
+}

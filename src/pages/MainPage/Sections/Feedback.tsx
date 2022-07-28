@@ -56,7 +56,7 @@ const feedbackItems = [
     },
 ];
 
-export const Feedback = () => {
+export const Feedback = ({ screenWidth } : { screenWidth: any }) => {
 
     const getStars = (rate: number) => {
         const stars = [];
@@ -80,7 +80,7 @@ export const Feedback = () => {
                             dots: false,
                             infinite: true,
                             speed: 500,
-                            slidesToShow: 4,
+                            slidesToShow: screenWidth <= 1366 ? 2 : 4,
                             slidesToScroll: 1,
                         }}
                     >

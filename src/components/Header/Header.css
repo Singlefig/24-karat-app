@@ -76,3 +76,10 @@
 .logo {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1366px) {
+    .bottom-content {
+        padding: 33px 0px;
+        column-gap: 34px;
+    }
+}

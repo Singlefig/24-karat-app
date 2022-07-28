@@ -9,7 +9,9 @@ import instaImage5 from '../../../assets/images/insta_image5.png';
 
 import './InstagramSection.css';
 
-export const InstagramSection = () => {
+export const InstagramSection = ({ screenWidth } : { screenWidth: any }) => {
+
+    
 
     return (
         <section className="instagram-section-container">
@@ -23,7 +25,7 @@ export const InstagramSection = () => {
                     dots: false,
                     infinite: true,
                     speed: 500,
-                    slidesToShow: 5,
+                    slidesToShow: screenWidth <= 1366 ? 3 : 5,
                     slidesToScroll: 1,
                 }}
             >

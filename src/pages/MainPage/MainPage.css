@@ -90,3 +90,65 @@
 .carousel-container .no-blur {
     background: none;
 }
+
+@media only screen and (max-width: 1800px) {
+    .hello-content {
+        max-width: 1000px;
+    }
+
+    .banner-image {
+        width: 663px;
+        height: 311px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .hello-content {
+        max-width: 1000px;
+    }
+
+    .banner-image {
+        width: 463px;
+        height: 250px;
+    }
+
+    .hello-content .carousel-container {
+        top: 232px;
+        right: -15px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .hello-content {
+        max-width: 1000px;
+        margin-bottom: 100px;
+    }
+
+    .banner-image {
+        width: 363px;
+        height: 200px;
+    }
+
+    .hello-content .carousel-container {
+        top: 190px;
+        right: 75px;
+        max-width: 370px;
+    }
+
+    .hello-content .carousel-container .ring-container {
+        width: 250px !important;
+        height: 300px;
+    }
+
+    .hello-content .carousel-container .ring-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner-image {
+        width: 263px;
+        height: 150px;
+    }
+}

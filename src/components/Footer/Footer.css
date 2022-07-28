@@ -115,3 +115,21 @@ footer .offers {
 .footer-content .footer-section .footer-section-menu span:hover {
     color: #D16757;
 }
+
+@media only screen and (max-width: 1200px) {
+    footer .footer-content {
+        padding: 70px 100px;
+    }
+
+    footer .offers .offers-text {
+        font-size: 30px;
+    }
+
+    footer .footer-content .footer-logo {
+        margin-right: 60px;
+    }
+
+    footer .footer-content .footer-section {
+        margin-right: 100px;
+    }
+}

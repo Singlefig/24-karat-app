@@ -9,17 +9,17 @@ import { InstagramSection } from "./Sections/InstagramSection";
 
 import './MainPage.css';
 
-export const MainPage = ({ isMainShadowed } : { isMainShadowed: boolean }) => {
+export const MainPage = ({ screenWidth, isMainShadowed }: { screenWidth: any, isMainShadowed: boolean }) => {
 
     return (
         <main className={`${isMainShadowed ? 'shadowed' : ''}`}>
             <HelloContent isMainShadowed />
-            <TopSelling />
+            <TopSelling screenWidth={screenWidth} />
             <CreateACustomRing />
             <MoreCollections />
-            <Feedback />
+            <Feedback screenWidth={screenWidth} />
             <About />
-            <InstagramSection />
+            <InstagramSection screenWidth={screenWidth} />
         </main>
     );
 };

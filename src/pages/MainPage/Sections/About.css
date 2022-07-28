@@ -49,3 +49,22 @@
     width: 5px;
     height: 5px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .about-section-container {
+        width: 800px;
+    }
+
+    .about-section-container .about-images {
+        justify-content: center;
+    }
+
+    .about-section-container .about-images img {
+        width: 365px;
+        height: 285px;
+    }
+
+    .about-section-container .about-text {
+        padding: 0 30px;
+    }
+}

@@ -19,7 +19,7 @@ export const HelloContent = ({ isMainShadowed }: { isMainShadowed: boolean }) =>
                     onClick={() => alert('Shop')}
                 />
             </div>
-            <img src={mainPageBanner} width={830} height={478} alt="banner" />
+            <img src={mainPageBanner} width={830} height={478} alt="banner" className="banner-image" />
             <div className="carousel-container">
                 <Carousel
                     settings={{
