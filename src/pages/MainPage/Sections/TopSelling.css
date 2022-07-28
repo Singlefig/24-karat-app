@@ -136,3 +136,14 @@
         max-width: 700px;
     }
 }
+
+@media only screen and (max-width: 1700px) {
+    .top-selling-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-selling-container .top-selling-carousel-container {
+        max-width: calc(100% - 200px);
+    }
+}

@@ -79,7 +79,42 @@
 
 @media only screen and (max-width: 1366px) {
     .bottom-content {
-        padding: 33px 0px;
         column-gap: 34px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-content {
+        column-gap: 24px;
+    }
+
+    .bottom-content {
+        column-gap: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-content a,
+    .bottom-content a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .top-content {
+        column-gap: 16px;
+    }
+
+    .bottom-content .logo {
+        width: 90px;
+    }
+
+    .bottom-content {
+        column-gap: 12px;
+    }
+
+    .top-content a,
+    .bottom-content a {
+        font-size: 12px;
     }
 }

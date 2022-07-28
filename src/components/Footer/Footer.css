@@ -143,3 +143,33 @@ footer .offers {
         margin-right: 100px;
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    footer .offers .offers-text {
+        font-size: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    footer .footer-content {
+        padding: 50px;
+    }
+
+    footer .offers .offers-text {
+        font-size: 24px;
+        margin-right: 20px;
+    }
+
+    .offers .offers-input .email-input {
+        width: 350px;
+    }
+
+    footer .footer-content .footer-section {
+        margin-right: 50px;
+    }
+
+    .footer-content .footer-section .footer-section-title {
+        font-size: 20px;
+    }
+}

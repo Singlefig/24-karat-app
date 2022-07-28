@@ -108,3 +108,51 @@
         height: 200px;
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    .create-custom-ring-container {
+        padding: 120px 20px;
+    }
+
+    .create-custom-ring-container .info-container .info-title {
+        font-size: 64px;
+        width: 100%;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 10px;
+        bottom: 100px;
+    }
+
+    .create-custom-ring-container .ring-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .create-custom-ring-container .info-container .info-title {
+        font-size: 46px;
+    }
+
+    .info-container .info-description {
+        font-size: 20px;
+    }
+
+    .create-custom-ring-container .button-bordered {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .picture-container img {
+        width: 365px;
+        height: 488px;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 10px;
+        bottom: 20px;
+    }
+}
+

@@ -91,6 +91,13 @@
     background: none;
 }
 
+@media only screen and (max-width: 1920px) {
+    .hello-content .carousel-container {
+        top: 270px;
+        right: 80px;
+    }
+}
+
 @media only screen and (max-width: 1800px) {
     .hello-content {
         max-width: 1000px;
@@ -121,7 +128,7 @@
 @media only screen and (max-width: 1366px) {
     .hello-content {
         max-width: 1000px;
-        margin-bottom: 100px;
+        margin-bottom: 170px;
     }
 
     .banner-image {
@@ -150,5 +157,67 @@
     .banner-image {
         width: 263px;
         height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .hello-content {
+        max-width: 100%;
+    }
+
+    .hello-content .jewellery-text {
+        margin-right: 0;
+    }
+
+    .hello-content .jewellery-text p {
+        font-size: 64px;
+    }
+
+    .hello-content .jewellery-text,
+    .hello-content .jewellery-text p {
+        width: 300px;
+    }
+
+    .hello-content .carousel-container {
+        top: 240px;
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .hello-content {
+        max-width: 100%;
+    }
+
+    .hello-content .jewellery-text {
+        margin-right: 0;
+    }
+
+    .banner-image {
+        width: 463px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hello-content {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hello-content .jewellery-text,
+    .hello-content .jewellery-text p {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .hello-content .jewellery-text p {
+        font-size: 44px;
+        margin-right: 0;
+    }
+
+    .hello-content .button-bordered {
+        font-size: 12px;
     }
 }
