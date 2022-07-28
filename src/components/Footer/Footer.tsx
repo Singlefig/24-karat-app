@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import logo from '../../assets/icons/24karat.svg';
 import sendEmail from '../../assets/icons/send_email.svg';
@@ -12,6 +12,19 @@ import './Footer.css';
 
 export const Footer = () => {
     const [email, setEmail] = useState('');
+    const btnRef = useRef<any>();
+
+    useEffect(() => {
+        const btnEl = btnRef.current;
+        btnEl.addEventListener('click', (e: any) => {
+            e.preventDefault();
+            btnEl.classList.add('is-done');
+
+            setTimeout(() => {
+                btnEl.innerHTML = "Thanks! Check Your Email"
+            }, 500);
+        });
+    }, []);
 
     return (
         <footer>
@@ -27,6 +40,7 @@ export const Footer = () => {
                     />
                     <button
                         className="submit-btn"
+                        ref={btnRef}
                     >
                         <img src={sendEmail} width={24} height={24} alt="send email" />
                     </button>

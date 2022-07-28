@@ -34,6 +34,8 @@ footer .offers {
 }
 
 .offers .offers-input .email-input {
+    width: 100%;
+    left: 0;
     width: 447px;
     padding: 9px 0 9px 19px;
     color: white;
@@ -42,6 +44,7 @@ footer .offers {
     background: none;
     font-family: 'Montserrat';
     font-size: 18px;
+    transition: background-color 0.35s ease-out;
 }
 
 .offers .offers-input .email-input::placeholder {
@@ -55,10 +58,17 @@ footer .offers {
     position: absolute;
     border: none;
     background-color: white;
+    color: #333333;
     right: 0;
     width: 90px;
     height: 42px;
     padding: 0;
+    transition: width 0.5s ease-out,
+}
+
+.offers .offers-input .submit-btn.is-done {
+    width: 100%;
+    opacity: 1;
 }
 
 .footer-content {
