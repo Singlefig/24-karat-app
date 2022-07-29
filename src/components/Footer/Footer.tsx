@@ -53,7 +53,7 @@ export const Footer = () => {
                     <div className="footer-section-menu">
                         <span>Search</span>
                         <span>Authenticity Card Request</span>
-                        <span>Custom Jewelry</span>
+                        <span>Custom Ring</span>
                         <span>24 karat's Story</span>
                         <span>Press</span>
                         <span>Blog</span>

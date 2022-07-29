@@ -221,3 +221,9 @@
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .hello-content {
+        padding-top: 88px;
+    }
+}

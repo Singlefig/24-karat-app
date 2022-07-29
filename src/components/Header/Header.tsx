@@ -7,7 +7,8 @@ import cartIcon from '../../assets/icons/cart.svg';
 import favouriteIcon from '../../assets/icons/favourite.svg';
 import karatIcon from '../../assets/icons/24karat.svg';
 
-export const Header = ({ setIsMainShadowed } : { setIsMainShadowed: any }) => {
+export const Header = ({ setIsMainShadowed }: { setIsMainShadowed: any }) => {
+
     return (
         <header className="header-container">
             <div className="top-content">
