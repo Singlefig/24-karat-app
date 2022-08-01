@@ -13,7 +13,7 @@ export const MainPage = ({ screenWidth, isMainShadowed }: { screenWidth: any, is
 
     return (
         <main id="main-page" className={`${isMainShadowed ? 'shadowed' : ''}`}>
-            <HelloContent isMainShadowed />
+            <HelloContent screenWidth={screenWidth} isMainShadowed />
             <TopSelling screenWidth={screenWidth} />
             <CreateACustomRing />
             <MoreCollections />

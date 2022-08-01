@@ -7,7 +7,7 @@ import mainPageRing from '../../../assets/images/main_page_ring.svg';
 import mainPageRing1 from '../../../assets/images/slider_ring.png';
 import mainPageRing2 from '../../../assets/images/slider_ring1.png';
 
-export const HelloContent = ({ isMainShadowed }: { isMainShadowed: boolean }) => {
+export const HelloContent = ({ isMainShadowed, screenWidth }: { isMainShadowed: boolean, screenWidth: any }) => {
     return (
         <section className="hello-content">
             <div className="jewellery-text">
@@ -25,6 +25,7 @@ export const HelloContent = ({ isMainShadowed }: { isMainShadowed: boolean }) =>
                     settings={{
                         dots: true,
                         infinite: true,
+                        arrows: screenWidth > 768,
                         speed: 500,
                         slidesToShow: 1,
                         slidesToScroll: 1,

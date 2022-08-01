@@ -225,5 +225,46 @@
 @media only screen and (max-width: 768px) {
     .hello-content {
         padding-top: 88px;
+        width: 100%;
+        height: 680px;
+        padding-left: 0;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .hello-content .banner-image {
+        width: calc(100% - 32px);
+        height: 360px;
+    }
+
+    .hello-content .carousel-container {
+        top: 460px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hello-content .carousel-container .ring-container {
+        height: fit-content;
+    }
+
+    .hello-content .jewellery-text {
+        width: 100%;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .hello-content .jewellery-text p {
+        font-size: 48px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .hello-content .jewellery-text .button-bordered {
+        position: absolute;
+        bottom: -176px;
+        width: 300px;
     }
 }

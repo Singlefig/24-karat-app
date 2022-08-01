@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage screenWidth={screenWidth} isMainShadowed={isMainShadowed} />} />
         </Routes>
-        <Footer />
+        <Footer screenWidth={screenWidth} />
       </div>
     </Router>
 

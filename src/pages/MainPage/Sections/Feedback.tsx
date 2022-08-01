@@ -80,6 +80,7 @@ export const Feedback = ({ screenWidth } : { screenWidth: any }) => {
                             dots: false,
                             infinite: true,
                             speed: 500,
+                            arrows: screenWidth > 768,
                             slidesToShow: screenWidth <= 1366 ? screenWidth <= 768 ? 1 : 2 : 4,
                             slidesToScroll: 1,
                         }}

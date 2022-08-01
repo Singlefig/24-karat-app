@@ -156,3 +156,37 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .create-custom-ring-container {
+        padding: 44px 16px;
+        flex-direction: column-reverse;
+        column-gap: 0;
+        row-gap: 44px;
+    }
+
+    .create-custom-ring-container .info-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .create-custom-ring-container .info-container p,
+    .create-custom-ring-container .info-container span {
+        text-align: center;
+    }
+
+    .create-custom-ring-container .info-container .button-bordered {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .picture-container img {
+        width: calc(100% - 73px);
+        height: 100%;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 30px;
+        bottom: 20px;
+        backdrop-filter: blur(10px);
+    }
+}

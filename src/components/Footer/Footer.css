@@ -173,3 +173,66 @@ footer .offers {
         font-size: 20px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    footer {
+        height: 100%;
+        position: relative;
+    }
+
+    footer .footer-content {
+        padding-bottom: 114px;
+    }
+
+    footer .footer-content .footer-logo {
+        margin-right: 0;
+    }
+
+    footer .footer-section:last-of-type,
+    footer .footer-content div.dropdown:last-of-type{
+        margin-bottom: 44px;
+    }
+
+    footer .socials {
+        position: absolute;
+        bottom: 44px;
+        width: calc(100% - 110px);
+        max-width: 400px;
+    }
+
+    footer .footer-content .socials .footer-section-title {
+        color: white;
+        text-align: left;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .footer-content .socials .socials-images {
+        display: flex;
+        column-gap: 32px;
+        margin-top: 24px;
+    }
+    
+    .footer-content .socials .socials-images img {
+        cursor: pointer;
+    }
+
+    footer .offers {
+        flex-direction: column;
+        column-gap: 24px;
+    }
+
+    footer .offers .offers-text {
+        margin-bottom: 30px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        row-gap: 32px;
+    }
+
+    footer .footer-content .footer-section {
+        margin-right: 0;
+    }
+}

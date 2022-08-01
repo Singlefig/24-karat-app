@@ -103,5 +103,42 @@
 @media only screen and (max-width: 900px) {
     .more-collections-container {
         padding: 120px 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .more-collections-container {
+        padding: 120px 0;
+    }
+
+    .more-collections-container .more-collections-items {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .more-collections-container .more-collections-items .more-collections-item {
+        width: 100%;
+    }
+
+    .more-collections-container .more-collections-items .more-collections-item p {
+        font-size: 28px;
+        width: calc(100% - 70px);
+
+    }
+
+    .more-collections-container .more-collections-items .more-collection-item-picture,
+    .more-collections-container .more-collections-items .more-collections-item img {
+        width: calc(100% - 34px);
+        height: 100%;
+    }
+
+    .more-collections-container .more-collections-items .more-collections-item img:hover {
+        transform: scale(1);
+    }
+
+    .more-collections-container .button-bordered {
+        width: calc(100% - 70px) !important;
     }
 }

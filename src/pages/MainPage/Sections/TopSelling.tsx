@@ -70,7 +70,8 @@ export const TopSelling = ({ screenWidth } : { screenWidth: any }) => {
                         dots: false,
                         infinite: true,
                         speed: 500,
-                        slidesToShow: screenWidth <= 1205 ? 2 : 4,
+                        arrows: screenWidth > 768,
+                        slidesToShow: screenWidth <= 1205 ? screenWidth <= 768 ? 1 : 2 : 4,
                         slidesToScroll: 1,
                     }}
                 >
