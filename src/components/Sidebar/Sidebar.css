@@ -1,64 +1,138 @@
 /* Individual item */
 .bm-item {
-    display: inline-block;
-  
+    display: flex !important;
+}
+
+.menu-item {
+    display: flex !important;
     /* Our sidebar item styling */
     text-decoration: none;
-    margin-bottom: 10px;
-    color: #d1d1d1;
-    transition: color 0.2s;
-  }
-  
-  /* Change color on hover */
-  .bm-item:hover {
-    color: white;
-  }
-  
-  /* The rest copied directly from react-burger-menu docs */
-  
-  /* Position and sizing of burger button */
-  .bm-burger-button {
+    margin-bottom: 18px;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.2);
+    color: #333333;
+    padding-bottom: 18px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.colored-item {
+    color: #CD5341;
+    border-bottom: none;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
     position: fixed;
     width: 32px;
     height: 32px;
     left: 16px;
     top: 16px;
-  }
-  
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
     background: #373a47;
-  }
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-  
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+    height: 32px !important;
+    width: 32px !important;
+    left: 16px !important;
+    top: -44px !important;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+    background: #333333;
+}
+
+/* General sidebar styles */
+.bm-menu {
+    background: white;
+    padding: 32px 16px;
+    font-size: 18px;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
     color: #b8b7ad;
-  }
-  
-  /* Styling of overlay */
-  .bm-overlay {
+    overflow-y: auto;
+    width: 100%;
+}
+
+/* Styling of overlay */
+.bm-overlay {
     background: rgba(0, 0, 0, 0.3);
-  }
+}
+
+.next-menu {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.next-menu .item {
+    display: flex !important;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.2);
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+    column-gap: 16px;
+}
+
+.prev-arrow-menu {
+    transform: rotate(180deg);
+}
+
+.next-menu .item.title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 54px;
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.next-menu .item.title p {
+    margin: 0;
+}
+
+.bottom-mobile-header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    row-gap: 24px;
+}
+
+.bottom-mobile-header a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    text-align: left;
+}
+
+.bottom-mobile-header .socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 24px;
+    margin-top: 56px;
+    margin-bottom: 32px;
+    padding-right: 28px;
+}
+
+.bottom-mobile-header .socials p {
+    color: #333333;
+    font-size: 16px;
+    margin: 0;
+}
+
+.bottom-mobile-header .socials .images {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

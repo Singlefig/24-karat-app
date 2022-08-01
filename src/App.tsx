@@ -7,6 +7,7 @@ import { MainPage } from './pages/MainPage/MainPage';
 
 import logo from './assets/icons/24karat.svg';
 import burger from './assets/icons/burger.svg';
+import cross from './assets/icons/cross.svg';
 
 import './App.css';
 
@@ -29,9 +30,10 @@ function App() {
         {screenWidth <= 768 ? (
           <div className="mobile-header">
             <Sidebar
-            pageWrapId={"main-page"}
-            outerContainerId={"root"}
-            customBurgerIcon={ <img src={burger} alt="burger" /> }
+              pageWrapId={"main-page"}
+              outerContainerId={"root"}
+              customBurgerIcon={<img src={burger} alt="burger" width={32} height={32} />}
+              customCrossIcon={<img src={cross} alt="cross" width={32} height={32} />}
             />
             <img src={logo} alt="logo" width={120} height={20} />
           </div>

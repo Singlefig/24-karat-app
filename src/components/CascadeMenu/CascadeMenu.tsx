@@ -15,18 +15,18 @@ import pearlJewelryIcon from '../../assets/icons/pearl-jewelry-icon.svg';
 
 import './CascadeMenu.css';
 
-export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed, setIsMainShadowed } : { isCascadeMenuDisplayed: boolean, setIsCascadeMenuDisplayed: any, setIsMainShadowed?: any }) => {
+export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed, setIsMainShadowed }: { isCascadeMenuDisplayed: boolean, setIsCascadeMenuDisplayed: any, setIsMainShadowed?: any }) => {
 
     return (
         <div
-        className="cascade-menu-container"
-        style={{
-            display: isCascadeMenuDisplayed ? 'grid' : 'none'
-        }}
-        onMouseLeave={() => {
-            setIsMainShadowed(false);
-            setIsCascadeMenuDisplayed(false);
-        }}
+            className="cascade-menu-container"
+            style={{
+                display: isCascadeMenuDisplayed ? 'grid' : 'none'
+            }}
+            onMouseLeave={() => {
+                setIsMainShadowed(false);
+                setIsCascadeMenuDisplayed(false);
+            }}
         >
             <div className="item">
                 <img src={necklaceIcon} width={80} height={80} alt="menu item" />

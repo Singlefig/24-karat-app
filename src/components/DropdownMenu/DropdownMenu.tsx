@@ -36,7 +36,7 @@ export const DropdownMenu = ({ items, title, marginBottom }: { items: Array<any>
                 height: isOpen ? '100%' : '0',
             }}
             >
-                {items.map((item: any) => <div className="dropdown-item">{item}</div>)}
+                {items.map((item: any) => <div key={item} className="dropdown-item">{item}</div>)}
             </div>
         </div>
     );

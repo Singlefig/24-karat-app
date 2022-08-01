@@ -21,7 +21,7 @@ main {
     .App > div > div {
       position: absolute;
       left: 0;
-      top: 0;
+      top: 64px;
     }
 
     .mobile-header {
