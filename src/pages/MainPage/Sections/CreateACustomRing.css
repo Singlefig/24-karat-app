@@ -190,3 +190,57 @@
         backdrop-filter: blur(10px);
     }
 }
+
+@media only screen and (max-width: 390px) {
+    .custom-ring-container {
+        margin-top: 44px;
+    }
+
+    .create-custom-ring-container {
+        padding: 44px 16px;
+    }
+
+    .create-custom-ring-container .info-container .info-title {
+        font-size: 32px;
+    }
+
+    .create-custom-ring-container .info-container .info-description {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
+
+    .create-custom-ring-container .info-container .button-bordered {
+        width: 100%;
+        padding: 17px 0;
+    }
+
+    .create-custom-ring-container .picture-container {
+        height: 500px;
+    }
+
+    .create-custom-ring-container .picture-container img {
+        width: 285px;
+        height: 360px;
+    }
+
+    .create-custom-ring-container .ring-container {
+        left: 15px;
+        bottom: 50px;
+        width: 206px;
+        height: 280px;
+    }
+
+    .create-custom-ring-container .ring-container .ring-text .ring-title {
+        font-size: 14px;
+    }
+
+    .create-custom-ring-container .ring-container .ring-text .ring-price {
+        font-size: 18px;
+    }
+
+    .create-custom-ring-container .ring-container img {
+        width: 174px;
+        height: 153px;
+        padding: 24px 16px 0;
+    }
+}

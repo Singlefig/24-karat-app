@@ -236,3 +236,29 @@ footer .offers {
         margin-right: 0;
     }
 }
+
+@media only screen and (max-width: 390px) {
+    footer .offers {
+        width: calc(100% - 36px);
+        height: 100%;
+        padding: 32px 18px;
+        row-gap: 24px;
+    }
+
+    footer .offers .offers-text {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .offers .offers-input {
+        width: 100%;
+    }
+
+    footer .footer-content {
+        padding: 44px 16px 128px;
+    }
+
+    footer .footer-content .footer-logo {
+        margin-bottom: 12px;
+    }
+}

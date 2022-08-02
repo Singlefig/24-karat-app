@@ -268,3 +268,25 @@
         width: 300px;
     }
 }
+
+@media only screen and (max-width: 390px) {
+    .hello-content {
+        margin-bottom: 110px;
+    }
+
+    .hello-content .banner-image {
+        height: 205px;
+    }
+
+    .hello-content .carousel-container {
+        top: 365px;
+    }
+
+    .hello-content .jewellery-text .button-bordered {
+        bottom: -110px;
+        width: calc(100% - 32px);
+        font-size: 18px;
+        font-weight: 600;
+        padding: 17px 0;
+    }
+}

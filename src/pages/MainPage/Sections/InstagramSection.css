@@ -144,3 +144,18 @@
         flex-direction: column;
     }
 }
+
+@media only screen and (max-width: 390px) {
+    .instagram-section-container {
+        margin-bottom: 64px;
+        row-gap: 24px;
+    }
+
+    .instagram-section-container .title p {
+        font-size: 32px;
+    }
+
+    .instagram-section-container .title .follow-text {
+        font-size: 18px;
+    }
+}

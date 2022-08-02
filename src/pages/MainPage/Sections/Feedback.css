@@ -181,3 +181,24 @@
         font-size: 48px;
     }
 }
+
+@media only screen and (max-width: 390px) {
+    .feedback {
+        padding: 44px 0;
+    }
+
+    .feedback .feedback-title {
+        font-size: 32px;
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .feedback-container .carousel-container {
+        margin-bottom: 64px;
+    }
+
+    .feedback-container .button-bordered {
+        width: calc(100% - 32px);
+        padding: 17px 0;
+    }
+}

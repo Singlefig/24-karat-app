@@ -77,7 +77,7 @@ export const Feedback = ({ screenWidth } : { screenWidth: any }) => {
                 <div className="carousel-container">
                     <Carousel
                         settings={{
-                            dots: false,
+                            dots: screenWidth <= 390,
                             infinite: true,
                             speed: 500,
                             arrows: screenWidth > 768,

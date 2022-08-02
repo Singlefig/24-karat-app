@@ -77,6 +77,7 @@
     display: flex !important;
     flex-direction: column;
     row-gap: 16px;
+    overflow: scroll;
 }
 
 .next-menu .item {
@@ -91,6 +92,11 @@
 
 .prev-arrow-menu {
     transform: rotate(180deg);
+}
+
+.next-menu .item {
+    color: #333333;
+    font-weight: 700;
 }
 
 .next-menu .item.title {

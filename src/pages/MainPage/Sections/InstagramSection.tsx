@@ -22,11 +22,11 @@ export const InstagramSection = ({ screenWidth } : { screenWidth: any }) => {
             <div className="carousel-container">
             <Carousel
                 settings={{
-                    dots: false,
+                    dots: screenWidth <= 390,
                     infinite: true,
                     speed: 500,
                     arrows: screenWidth > 768,
-                    slidesToShow: screenWidth <= 1366 ? screenWidth <= 768 ? 2 : 3 : 5,
+                    slidesToShow: screenWidth <= 1366 ? screenWidth <= 800 ? screenWidth <= 630 ? 1 : 2 : 3 : 5,
                     slidesToScroll: 1,
                 }}
             >
