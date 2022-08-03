@@ -201,6 +201,7 @@
     .gradient.left {
         left: -30px;
         width: 74px;
+        height: 176px;
         background: linear-gradient(90deg,  #FBFBFB 65%, rgba(251, 251, 251, 0.1) 100%);
     }
 
