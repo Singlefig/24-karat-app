@@ -206,3 +206,15 @@
     }
 
 }
+
+@media only screen and (max-width: 390px) {
+    .instagram-section-container .carousel-container .slick-slide {
+        width: 170px !important;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .instagram-section-container .carousel-container .slick-slide {
+        width: 145px !important;
+    }
+}

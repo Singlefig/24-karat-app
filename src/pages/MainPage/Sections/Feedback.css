@@ -236,3 +236,9 @@
         z-index: 1;
     }
 }
+
+@media only screen and (max-width: 360px) {
+    .feedback-carousel-item {
+        padding: 40px 10px;
+    }
+}
