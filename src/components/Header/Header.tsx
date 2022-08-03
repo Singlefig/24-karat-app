@@ -2,9 +2,9 @@ import React from "react";
 import { HeaderLink } from "../HeaderLink/HeaderLink";
 
 import './Header.css';
-import searchIcon from '../../assets/icons/search.svg';
+import { ReactComponent as SearchIcon } from '../../assets/icons/search.svg';
 import cartIcon from '../../assets/icons/cart.svg';
-import favouriteIcon from '../../assets/icons/favourite.svg';
+import { ReactComponent as FavouriteIcon } from '../../assets/icons/favourite.svg';
 import karatIcon from '../../assets/icons/24karat.svg';
 
 export const Header = ({ setIsMainShadowed }: { setIsMainShadowed: any }) => {
@@ -27,8 +27,8 @@ export const Header = ({ setIsMainShadowed }: { setIsMainShadowed: any }) => {
                 <HeaderLink text="Custom a ring" link="#custom-a-ring" />
                 <HeaderLink className="colored-link" text="New" link="#new" />
                 <div className="icons">
-                    <img src={searchIcon} alt="search" width={32} height={32} />
-                    <img src={favouriteIcon} alt="favourite" width={32} height={32} />
+                    <SearchIcon stroke="white" width={32} height={32} />
+                    <FavouriteIcon fill="#333333" stroke="white" width={32} height={32} />
                     <img src={cartIcon} alt="cart" width={32} height={32} />
                 </div>
             </div>

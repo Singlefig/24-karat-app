@@ -74,7 +74,7 @@ export const TopSelling = ({ screenWidth } : { screenWidth: any }) => {
                         arrows: screenWidth > 768,
                         slidesToShow: screenWidth <= 1205 ? screenWidth <= 768 ? 1 : 2 : 4,
                         slidesToScroll: 1,
-                        centerMode: true,
+                        centerMode: screenWidth <= 390,
                     }}
                 >
                     {sliderItems.map((el, index) => {

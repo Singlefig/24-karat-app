@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
+import { MobileBottomMenu } from './components/MobileBottomMenu/MobileBottomMenu';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { MainPage } from './pages/MainPage/MainPage';
 
@@ -41,6 +42,9 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage screenWidth={screenWidth} isMainShadowed={isMainShadowed} />} />
         </Routes>
+        {screenWidth <= 768 ? (
+          <MobileBottomMenu />
+        ) : null}
         <Footer screenWidth={screenWidth} />
       </div>
     </Router>
