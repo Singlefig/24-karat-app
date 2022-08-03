@@ -3,6 +3,8 @@ import heartIcon from '../../assets/icons/favourite_black.svg';
 import heartBorderedIcon from '../../assets/icons/favourite_hovered.svg';
 import heartIconFilled from '../../assets/icons/favourite_filled.svg';
 
+import './SliderItem.css';
+
 export const SliderItem = ({ isHovered, setIsHovered, index, imgSrc, title, price, isClicked, setIsClicked }: { isHovered: Array<boolean>, setIsHovered: any, index: number, imgSrc: any, title: string, price: string, isClicked: Array<boolean>, setIsClicked: any }) => {
 
     return (

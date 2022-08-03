@@ -75,13 +75,14 @@ export const Feedback = ({ screenWidth } : { screenWidth: any }) => {
             <div className="feedback">
                 <p className="feedback-title">What Our Customers Are Saying About Us</p>
                 <div className="carousel-container">
+                    <div className="gradient" />
                     <Carousel
                         settings={{
                             dots: screenWidth <= 390,
-                            infinite: true,
+                            infinite: false,
                             speed: 500,
                             arrows: screenWidth > 768,
-                            slidesToShow: screenWidth <= 1366 ? screenWidth <= 768 ? 1 : 2 : 4,
+                            slidesToShow: screenWidth <= 1366 ? screenWidth <= 768 ? screenWidth <= 390 ? 1.5 : 1 : 2 : 4,
                             slidesToScroll: 1,
                         }}
                     >

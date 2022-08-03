@@ -65,6 +65,7 @@ export const TopSelling = ({ screenWidth } : { screenWidth: any }) => {
             <h2 className="top-selling-title">Top Selling</h2>
             <Tabs tabs={tabs} setActiveTab={setTabs} />
             <div className="top-selling-carousel-container">
+                <div className="gradient" />
                 <Carousel
                     settings={{
                         dots: screenWidth <= 390,
@@ -73,6 +74,7 @@ export const TopSelling = ({ screenWidth } : { screenWidth: any }) => {
                         arrows: screenWidth > 768,
                         slidesToShow: screenWidth <= 1205 ? screenWidth <= 768 ? 1 : 2 : 4,
                         slidesToScroll: 1,
+                        centerMode: true,
                     }}
                 >
                     {sliderItems.map((el, index) => {

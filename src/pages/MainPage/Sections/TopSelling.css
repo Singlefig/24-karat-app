@@ -106,7 +106,7 @@
         max-width: 1080px;
     }
 
-    .top-selling-carousel-container .slick-slide > div {
+    .top-selling-carousel-container .slick-slide>div {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -198,7 +198,19 @@
         margin-top: 44px;
     }
 
-    .top-selling-container  .top-selling-carousel-container {
+    .gradient {
+        display: block;
+        background: linear-gradient(270deg, #FBFBFB 50%, rgba(251, 251, 251, 0) 100%);
+        height: 100%;
+        width: 64px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .top-selling-container .top-selling-carousel-container {
+        position: relative;
         max-width: 100%;
         margin-bottom: 76px;
     }
@@ -248,5 +260,23 @@
     .top-selling-container .button-bordered {
         width: calc(100% - 32px);
         padding: 17px 0;
+    }
+
+    .top-selling-container .top-selling-carousel-container .slick-list {
+        padding: 0 20% 0 0 !important;
+    }
+
+    .top-selling-carousel-container .slick-slide.slick-active {
+        width: 214px !important;
+    }
+
+    .top-selling-carousel-container .slick-slide.slick-active>div {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 16px;
+    }
+
+    .top-selling-carousel-container .slick-slide.slick-active+.slick-slide>div .gradient {
+        display: block;
     }
 }

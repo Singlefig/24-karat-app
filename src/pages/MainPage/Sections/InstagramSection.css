@@ -151,6 +151,34 @@
         row-gap: 24px;
     }
 
+    .instagram-section-container .carousel-container {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .instagram-section-container .carousel-container .slick-list {
+        padding: 0;
+        padding-left: 30%;
+        padding-right: 20%;
+    }
+
+    .instagram-section-container .carousel-container .slick-slide {
+        width: 180px !important;
+        padding-left: 12px;
+    }
+
+    .instagram-section-container .carousel-container .slider-item {
+        width: calc(100% - 12px);
+    }
+
+    .instagram-section-container .carousel-container .slider-item img {
+        width: 100%;
+        height: 100%;
+    }
+
     .instagram-section-container .title p {
         font-size: 32px;
     }
@@ -158,4 +186,22 @@
     .instagram-section-container .title .follow-text {
         font-size: 18px;
     }
+
+    .gradient {
+        display: block;
+        background: linear-gradient(270deg, #FBFBFB 50%, rgba(251, 251, 251, 0) 100%);
+        height: 100%;
+        width: 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .gradient.left {
+        left: -30px;
+        width: 74px;
+        background: linear-gradient(90deg,  #FBFBFB 65%, rgba(251, 251, 251, 0.1) 100%);
+    }
+
 }
