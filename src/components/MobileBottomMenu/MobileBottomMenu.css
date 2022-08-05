@@ -12,3 +12,9 @@
     box-sizing: content-box;
     border-top: 1px solid #EEEEEE;
 }
+
+@media only screen and (max-width: 768px) {
+    .mobile-bottom-menu {
+        justify-content: space-between;
+    }
+}
