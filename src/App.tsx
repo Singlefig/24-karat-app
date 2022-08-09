@@ -11,6 +11,7 @@ import burger from './assets/icons/burger.svg';
 import cross from './assets/icons/cross.svg';
 
 import './App.css';
+import { CatalogPage } from './pages/CatalogPage/CatalogPage';
 
 function App() {
   const [isMainShadowed, setIsMainShadowed] = useState(false);
@@ -41,6 +42,7 @@ function App() {
         ) : <Header setIsMainShadowed={setIsMainShadowed} />}
         <Routes>
           <Route path='/' element={<MainPage screenWidth={screenWidth} isMainShadowed={isMainShadowed} />} />
+          <Route path={`/Women's/*`} element={<CatalogPage />} />
         </Routes>
         {screenWidth <= 768 ? (
           <MobileBottomMenu />

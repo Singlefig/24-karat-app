@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 import necklaceIcon from '../../assets/icons/necklace-icon.svg';
 import earringIcon from '../../assets/icons/earring-icon.svg';
@@ -16,6 +17,10 @@ import pearlJewelryIcon from '../../assets/icons/pearl-jewelry-icon.svg';
 import './CascadeMenu.css';
 
 export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed, setIsMainShadowed }: { isCascadeMenuDisplayed: boolean, setIsCascadeMenuDisplayed: any, setIsMainShadowed?: any }) => {
+    const navigate = useNavigate();
+    const onItemClick = (path: string) => {
+        navigate(path);
+    };
 
     return (
         <div
@@ -28,7 +33,7 @@ export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed,
                 setIsCascadeMenuDisplayed(false);
             }}
         >
-            <div className="item">
+            <div className="item" onClick={() => onItemClick(`/Women's/Necklaces & Pendants`)} >
                 <img src={necklaceIcon} width={80} height={80} alt="menu item" />
                 <p>Necklaces & Pendants</p>
             </div>

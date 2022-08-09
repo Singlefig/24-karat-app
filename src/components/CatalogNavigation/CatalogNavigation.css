@@ -1,0 +1,20 @@
+.catalog-navigation {
+    display: flex;
+    color: #828282;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    column-gap: 6px;
+    width: 100%;
+}
+
+.catalog-navigation-item {
+    display: flex;
+    column-gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-navigation-item a {
+    text-decoration: none;
+    color: #828282;
+}
