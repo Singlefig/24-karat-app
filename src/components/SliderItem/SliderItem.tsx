@@ -2,6 +2,7 @@ import React from "react";
 import heartIcon from '../../assets/icons/favourite_black.svg';
 import heartBorderedIcon from '../../assets/icons/favourite_hovered.svg';
 import heartIconFilled from '../../assets/icons/favourite_filled.svg';
+import cart from '../../assets/icons/cart_colored.svg';
 
 import './SliderItem.css';
 
@@ -35,6 +36,7 @@ export const SliderItem = ({ isHovered, setIsHovered, index, imgSrc, title, pric
             <div className="ring-text">
                 <p className="ring-title">{title}</p>
                 <p className="ring-price">{price}</p>
+                <img src={cart} width={32} height={32} alt="cart" />
             </div>
         </div>
     );

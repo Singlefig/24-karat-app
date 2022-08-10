@@ -9,9 +9,7 @@ import instaImage5 from '../../../assets/images/insta_image5.png';
 
 import './InstagramSection.css';
 
-export const InstagramSection = ({ screenWidth } : { screenWidth: any }) => {
-
-    
+export const InstagramSection = ({ screenWidth }: { screenWidth: any }) => {
 
     return (
         <section className="instagram-section-container">
@@ -22,49 +20,49 @@ export const InstagramSection = ({ screenWidth } : { screenWidth: any }) => {
             <div className="carousel-container">
                 <div className="gradient" />
                 <div className="gradient left" />
-            <Carousel
-                settings={{
-                    dots: screenWidth <= 390,
-                    infinite: true,
-                    speed: 500,
-                    arrows: screenWidth > 768,
-                    slidesToShow: screenWidth <= 1366 ? screenWidth <= 800 ? screenWidth <= 630 ? screenWidth <= 390 ? 2 : 1 : 2 : 3 : 5,
-                    slidesToScroll: 1,
-                }}
-            >
-                <div className="slider-item">
-                <img src={instaImage1} width={294} height={285} alt="instagram" />
+                <Carousel
+                    settings={{
+                        dots: screenWidth <= 390,
+                        infinite: true,
+                        speed: 500,
+                        arrows: screenWidth.screenWidth > 768,
+                        slidesToShow: screenWidth <= 1366 ? screenWidth <= 800 ? screenWidth <= 630 ? screenWidth <= 390 ? 2 : 1 : 2 : 3 : 5,
+                        slidesToScroll: 1,
+                    }}
+                >
+                    <div className="slider-item">
+                        <img src={instaImage1} width={294} height={285} alt="instagram" />
 
-                </div>
-                <div className="slider-item">
-                <img src={instaImage2} width={294} height={285} alt="instagram" />
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage2} width={294} height={285} alt="instagram" />
 
-                </div>
-                <div className="slider-item">
-                <img src={instaImage3} width={294} height={285} alt="instagram" />
-                    
-                </div>
-                <div className="slider-item">
-                <img src={instaImage4} width={294} height={285} alt="instagram" />
-                    
-                </div>
-                <div className="slider-item">
-                <img src={instaImage5} width={294} height={285} alt="instagram" />
-                    
-                </div>
-                <div className="slider-item">
-                <img src={instaImage1} width={294} height={285} alt="instagram" />
-                    
-                </div>
-                <div className="slider-item">
-                <img src={instaImage4} width={294} height={285} alt="instagram" />
-                    
-                </div>
-                <div className="slider-item">
-                <img src={instaImage3} width={294} height={285} alt="instagram" />
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage3} width={294} height={285} alt="instagram" />
 
-                </div>
-            </Carousel>
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage4} width={294} height={285} alt="instagram" />
+
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage5} width={294} height={285} alt="instagram" />
+
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage1} width={294} height={285} alt="instagram" />
+
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage4} width={294} height={285} alt="instagram" />
+
+                    </div>
+                    <div className="slider-item">
+                        <img src={instaImage3} width={294} height={285} alt="instagram" />
+
+                    </div>
+                </Carousel>
             </div>
         </section>
     );

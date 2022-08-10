@@ -1,0 +1,18 @@
+.ring-text {
+    position: relative;
+}
+
+.ring-text img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.top-selling-container .ring-container .ring-text img[alt="cart"] {
+    position: absolute;
+    background-color: #FBFBFB;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    cursor: pointer;
+}
