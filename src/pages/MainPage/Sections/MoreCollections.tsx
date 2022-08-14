@@ -24,15 +24,15 @@ const moreCollectionsItems = [
         img: moreCollectionItem3,
     },
     {
-        text: 'The paradise collection',
+        text: 'Layaring',
         img: moreCollectionItem4,
     },
     {
-        text: 'Hoops & studs',
+        text: 'Gifts For Her',
         img: moreCollectionItem5,
     },
     {
-        text: 'Rings & Stackables',
+        text: 'Engagement',
         img: moreCollectionItem6,
     },
 ];

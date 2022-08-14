@@ -32,7 +32,7 @@ export const SliderItem = ({ isHovered, setIsHovered, index, imgSrc, title, pric
                 height={32}
                 alt="heart"
             />
-            <img src={imgSrc} alt="ring" width={330} height={350} />
+            <img src={imgSrc} alt="ring" width={355} height={350} />
             <div className="ring-text">
                 <p className="ring-title">{title}</p>
                 <p className="ring-price">{price}</p>

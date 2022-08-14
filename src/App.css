@@ -18,6 +18,16 @@ main {
   background-color: #FBFBFB;
 }
 
+.shadowed {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+  background-size: cover;
+  opacity: 0.5;
+  top: 128px;
+}
+
 @media only screen and (max-width: 768px) {
     .App > div > div {
       position: absolute;

@@ -49,7 +49,7 @@
 }
 
 .top-selling-carousel-container .slick-next {
-    right: -57px;
+    right: -77px;
 }
 
 .top-selling-carousel-container .ring-text .ring-title,
@@ -64,7 +64,7 @@
 .top-selling-carousel-container .ring-container .heart-icon {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: -6px;
 }
 
 @media only screen and (max-width: 1920px) {

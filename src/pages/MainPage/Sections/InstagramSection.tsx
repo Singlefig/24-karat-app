@@ -25,7 +25,7 @@ export const InstagramSection = ({ screenWidth }: { screenWidth: any }) => {
                         dots: screenWidth <= 390,
                         infinite: true,
                         speed: 500,
-                        arrows: screenWidth.screenWidth > 768,
+                        arrows: screenWidth.screenWidth ? screenWidth.screenWidth : screenWidth > 768,
                         slidesToShow: screenWidth <= 1366 ? screenWidth <= 800 ? screenWidth <= 630 ? screenWidth <= 390 ? 2 : 1 : 2 : 3 : 5,
                         slidesToScroll: 1,
                     }}

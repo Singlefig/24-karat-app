@@ -16,7 +16,6 @@ export const RangeSlider = ({ style, values, setValues }: { style: string, value
       max={MAX}
       onChange={values => {
         setValues(values);
-        console.log(values);
       }}
       renderTrack={({ props, children }) => (
         <div

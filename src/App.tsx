@@ -44,6 +44,7 @@ function App() {
           <Route path='/' element={<MainPage screenWidth={screenWidth} isMainShadowed={isMainShadowed} />} />
           <Route path={`/Women's/*`} element={<CatalogPage screenWidth={screenWidth} />} />
         </Routes>
+        <div className={isMainShadowed ? 'shadowed' : ''} />
         {screenWidth <= 768 ? (
           <MobileBottomMenu />
         ) : null}

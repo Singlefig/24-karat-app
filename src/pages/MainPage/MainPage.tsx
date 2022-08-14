@@ -10,10 +10,9 @@ import { InstagramSection } from "./Sections/InstagramSection";
 import './MainPage.css';
 
 export const MainPage = ({ screenWidth, isMainShadowed }: { screenWidth: any, isMainShadowed: boolean }) => {
-
     return (
-        <main id="main-page" className={`${isMainShadowed ? 'shadowed' : ''}`}>
-            <HelloContent screenWidth={screenWidth} isMainShadowed />
+        <main id="main-page">
+            <HelloContent screenWidth={screenWidth} isMainShadowed={isMainShadowed} />
             <TopSelling screenWidth={screenWidth} />
             <CreateACustomRing />
             <MoreCollections />

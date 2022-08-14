@@ -20,7 +20,7 @@ export const HelloContent = ({ isMainShadowed, screenWidth }: { isMainShadowed: 
                 />
             </div>
             <img src={mainPageBanner} width={830} height={478} alt="banner" className="banner-image" />
-            <div className="carousel-container">
+            <div className={`carousel-container ${isMainShadowed ? 'container-shadowed' : ''}`}>
                 <Carousel
                     settings={{
                         dots: true,

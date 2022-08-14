@@ -15,7 +15,7 @@ export const About = () => {
                 <img src={aboutImage2} width={565} height={386} alt="about" />
             </div>
             <div className="about-text">
-                <p>Founded in Amsterdam. Van Amstel diamond believes that by combining traditional craftmanship and modern technology that we can offer the world's most beautiful diamond jewels and the best experience for outstanding prices.</p>
+                <p>Founded in Amsterdam. 24 karat believes that by combining traditional craftmanship and modern technology that we can offer the world's most beautiful diamond jewels and the best experience for outstanding prices.</p>
                 <ul className="about-list">
                     <li className="about-list-item">We offer, due to that we are a diamond importer and an internet based company, worldwide the best possible prices.</li>
                     <li className="about-list-item">We offer a viewing period of 14 days.</li>

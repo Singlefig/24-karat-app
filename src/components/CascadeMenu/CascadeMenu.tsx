@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 
 import necklaceIcon from '../../assets/icons/necklace-icon.svg';
@@ -22,6 +22,14 @@ export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed,
         navigate(path);
     };
 
+    useEffect(() => {
+        if (isCascadeMenuDisplayed) {
+            setIsMainShadowed(true);
+        } else {
+            setIsMainShadowed(false);
+        }
+    }, [isCascadeMenuDisplayed, setIsMainShadowed]);
+
     return (
         <div
             className="cascade-menu-container"
@@ -29,7 +37,6 @@ export const CascadeMenu = ({ isCascadeMenuDisplayed, setIsCascadeMenuDisplayed,
                 display: isCascadeMenuDisplayed ? 'grid' : 'none'
             }}
             onMouseLeave={() => {
-                setIsMainShadowed(false);
                 setIsCascadeMenuDisplayed(false);
             }}
         >

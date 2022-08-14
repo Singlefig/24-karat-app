@@ -15,6 +15,10 @@
     margin-bottom: 32px;
 }
 
+.more-collections-container button {
+    padding: 23px 0;
+}
+
 .more-collections-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

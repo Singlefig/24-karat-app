@@ -13,9 +13,6 @@ export const HeaderLink = ({ text, link, className, withCascade, setIsMainShadow
                 className={className}
                 to={link}
                 onMouseEnter={() => {
-                    if (setIsMainShadowed) {
-                        setIsMainShadowed(true);
-                    }
                     setIsCascadeMenuDisplayed(true);
                 }}
             >

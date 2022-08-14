@@ -21,7 +21,7 @@ export const Header = ({ setIsMainShadowed }: { setIsMainShadowed: any }) => {
             <div className="bottom-content">
                 <HeaderLink setIsMainShadowed={setIsMainShadowed} withCascade text="Men's" link="#mens" />
                 <HeaderLink text="Wedding" link="#wedding" />
-                <HeaderLink text="Women's" link="#womens" />
+                <HeaderLink setIsMainShadowed={setIsMainShadowed} withCascade text="Women's" link="#womens" />
                 <HeaderLink text="Gifts" link="#gifts" />
                 <img className="logo" alt="24 karat logo" src={karatIcon} width={157} height={26} />
                 <HeaderLink text="Custom a ring" link="#custom-a-ring" />

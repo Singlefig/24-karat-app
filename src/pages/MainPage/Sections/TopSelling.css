@@ -29,7 +29,7 @@
 
 .top-selling-container .ring-container {
     position: relative;
-    width: 330px !important;
+    width: 355px !important;
     height: 551px;
     padding-left: 25px;
 }
@@ -64,7 +64,7 @@
 .top-selling-carousel-container .ring-container .heart-icon {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: -6px;
 }
 
 @media only screen and (max-width: 1920px) {
